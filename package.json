@@ -1,0 +1,39 @@
+{
+  "name": "pixel-normals",
+  "version": "0.0.1",
+  "description": "Experimenting with normal maps and dynamic lighting on isometric pixel tiles",
+  "main": "script/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify script/main.js -t brfs -g uglifyify -o static/bundle.js",
+    "watch": "watchify script/main.js -t brfs -d -o static/bundle.js -v"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vegeta897/pixel-normals.git"
+  },
+  "keywords": [
+    "isometric",
+    "canvas",
+    "pixel",
+    "pixels",
+    "graphics",
+    "normals",
+    "demo",
+    "experiment"
+  ],
+  "author": "Devin Spikowski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vegeta897/pixel-normals/issues"
+  },
+  "homepage": "https://github.com/vegeta897/pixel-normals#readme",
+  "dependencies": {
+    "brfs": "^1.4.3",
+    "browserify": "^13.0.0",
+    "inherits": "^2.0.1",
+    "raf": "^3.2.0",
+    "uglifyify": "^3.0.1",
+    "watchify": "^3.7.0"
+  }
+}
